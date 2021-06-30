@@ -6,6 +6,7 @@ CREATE TABLE employees (
 	last_name    VARCHAR(25)   NOT NULL,
 	sex          VARCHAR(1)    NOT NULL,
 	hire_date    DATE          NOT NULL,
+	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id),
 	PRIMARY KEY (emp_no)
 );
 
